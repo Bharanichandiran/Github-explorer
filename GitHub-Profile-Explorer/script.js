@@ -1,4 +1,4 @@
-const token = "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";  
+const token = "**********token**************";  
 async function fetchProfileData() {
     let username=document.getElementById("githubLink").value;
     const url = `https://api.github.com/users/${username}`;  
