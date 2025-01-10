@@ -1,0 +1,271 @@
+/* Add Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Droid+Serif&display=swap');
+
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('images/GitHub-headpic.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Align content in a column */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Place it behind the content */
+}
+
+h1, p {
+    z-index: 1; /* Make sure the text stays on top */
+}
+
+
+/* Title in the Background Area */
+h1 {
+    font-size: 2.5rem;
+    color: #fff; /* White title */
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Shadow for better visibility */
+    margin-top: 20px; /* Margin from the top */
+    margin-bottom: 20px; /* Space below the title */
+    padding: 0;
+    width: 100%; /* Ensure title spans across the entire width */
+}
+
+/* Container */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Slight transparency for contrast */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 10px; /* Add margin to space the card from the title */
+    transition: all 0.3s ease; /* Smooth transition */
+  
+   
+}
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Input Field */
+.search-container input {
+    width: 70%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container input:focus,
+.search-container input:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Light glow effect */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Search Button */
+.search-container .search-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff; /* Blue background for the button */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.search-container .search-btn:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+    transform: scale(1.05); /* Scale up button slightly */
+}
+
+/* Error Message */
+.error {
+    color: #ff4b4b;
+    font-size: 1rem;
+    margin: 1rem 0;
+    display: none;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: left;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.profile-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    border: 2px solid #ff6f61;
+}
+
+.profile-info p {
+    margin: 0.5rem 0;
+}
+
+/* Repository Section */
+.repo-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.repo-section p {
+    margin: 0.5rem 0;
+}
+
+.repo-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.repo-section ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Commits Section */
+.commits-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.commits-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.commits-section ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container input {
+        width: 60%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('images/GitHub-headpic.webp') center/cover no-repeat; /* Page background image */
+    font-family: 'Poppins', sans-serif; /* New font family */
+    color: white; /* Default text color */
+}
+#profileData{
+    font-family: 'Droid Serif', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+    width: 90%;
+    width: 500px;
+    margin-top: 10px; /* Add margin to space the card from the title */
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Reduced gap between left and right sections */
+    margin-top: 20px;
+}
+
+.cards-left, .cards-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Gap between individual cards */
+    justify-content: center;
+}
+
+.cards-left .card, .cards-right .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background for cards */
+}
+
+.cards-left .card p.tip, .cards-right .card p.tip {
+    font-size: 1em;
+    font-weight: 600; /* Slightly bolder text for tips */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+}
+
+.cards-left .card p.second-text, .cards-right .card p.second-text {
+    font-size: 0.8em;
+    font-weight: 300; /* Lighter text for the secondary text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+}
+
+.cards-left .card:hover, .cards-right .card:hover {
+    transform: scale(1.1, 1.1);
+    background-color: rgba(59, 130, 246, 0.8); /* Blue overlay on hover */
+}
+
+.cards-left:hover > .card:not(:hover), .cards-right:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
